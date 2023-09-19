@@ -1,0 +1,135 @@
+body
+{
+	background-image: url('images/bgi.jpeg');
+	border: 2px solid hotpink;
+	margin: 30px;
+	font-family: comic sans-serif
+}
+
+header img
+{
+	vertical-align: top;
+}
+#jpeg
+{
+	width: 250px;
+	height: 250px;
+}
+#gif
+{
+	height: 250px;
+}
+
+.conteneur
+{
+	background-color: whitesmoke;
+}
+
+nav 
+{ 
+	top: 265px;
+	background-color: #855347;
+}
+a
+{
+	display: inline-block;
+	border-right: 1px solid white;
+	width: 250px;
+	color: #ecc474;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+}
+h1
+{
+	text-align: center;
+}
+#images
+{
+	width: 450 px;
+	height: 500px;
+	justify-content: space-around;
+}
+
+
+
+p img 
+{
+	vertical-align: none;
+}
+
+p, div
+{
+	text-align: center;
+}
+
+
+
+aside
+{
+position: relative;
+margin-right: 40px;
+}
+
+section
+{	
+   margin-left: 10px;
+   min-height: 500px;
+}
+section video
+{
+float: left; 
+}
+#ensemble
+{
+	margin: 50px 50px 100px 100px;
+}
+section iframe
+{
+	float: right;
+}
+
+.slider-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  height: 700px;
+  overflow: hidden;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+  background: #1c87c9;
+}
+.slide-input{
+  opacity: 0;
+}
+.slide-img {
+  width: 500px;
+  height: 650px ;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
